@@ -1,6 +1,7 @@
 html,
 body {
   background-color: #222222;
+  height: 100%;
 }
 
 body {
@@ -9,9 +10,13 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #f1f1f1;
+  color: #abb2bf;
 }
 
 code {
   font-family: source-code-pro, Menlo, Consolas, 'Courier New', monospace;
+}
+
+#root {
+  height: 100%;
 }

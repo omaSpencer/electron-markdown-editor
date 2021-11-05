@@ -30,7 +30,9 @@ const config = {
     outDir: 'dist',
     assetsDir: '.',
     rollupOptions: {
-      external: [...builtinModules],
+      external: [
+        ...builtinModules.filter(m => m !== 'process' && m !== 'assert'),
+      ],
     },
     emptyOutDir: true,
     brotliSize: false,

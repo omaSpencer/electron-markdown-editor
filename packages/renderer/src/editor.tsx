@@ -15,7 +15,7 @@ const Editor: React.FC<Props> = props => {
   )
   const [refContainer, editorView] = useCodeMirror<HTMLDivElement>({
     initialDoc,
-    onChange: () => handleChange,
+    onChange: handleChange,
   })
 
   useEffect(() => {
@@ -24,11 +24,7 @@ const Editor: React.FC<Props> = props => {
     }
   }, [editorView])
 
-  return (
-    <div className="editor-wrapper" ref={refContainer}>
-      Editor
-    </div>
-  )
+  return <div className="editor-wrapper" ref={refContainer}></div>
 }
 
 export default Editor

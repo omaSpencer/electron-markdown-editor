@@ -1,5 +1,7 @@
 .app {
   background-color: transparent !important;
+  display: flex;
+  height: 100%;
 }
 
 button {
