@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: transparent;
+  background-color: #222222;
 }
 
 body {
@@ -9,6 +9,7 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #f1f1f1;
 }
 
 code {

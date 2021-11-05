@@ -56,7 +56,7 @@
     "@codemirror/state" "^0.19.0"
     "@codemirror/view" "^0.19.0"
 
-"@codemirror/highlight@^0.19.6":
+"@codemirror/highlight@^0.19.0", "@codemirror/highlight@^0.19.6":
   "integrity" "sha512-+eibu6on9quY8uN3xJ/n3rH+YIDLlpX7YulVmFvqAIz/ukRQ5tWaBmB7fMixHmnmRIRBRZgB8rNtonuMwZSAHQ=="
   "resolved" "https://registry.npmjs.org/@codemirror/highlight/-/highlight-0.19.6.tgz"
   "version" "0.19.6"
@@ -76,7 +76,50 @@
     "@codemirror/state" "^0.19.0"
     "@codemirror/view" "^0.19.0"
 
-"@codemirror/lang-javascript@^0.19.2":
+"@codemirror/lang-cpp@^0.19.0":
+  "integrity" "sha512-BGvZkfcqcalAwxocuE9DhH6gqflm5IjL/8mGTzc8bHzeP1N4innK8qo2G69ohEML4LDZv4WyXc3y4C9/zsGCGQ=="
+  "resolved" "https://registry.npmjs.org/@codemirror/lang-cpp/-/lang-cpp-0.19.1.tgz"
+  "version" "0.19.1"
+  dependencies:
+    "@codemirror/highlight" "^0.19.0"
+    "@codemirror/language" "^0.19.0"
+    "@lezer/cpp" "^0.15.0"
+
+"@codemirror/lang-css@^0.19.0":
+  "integrity" "sha512-tyCUJR42/UlfOPLb94/p7dN+IPsYSIzHbAHP2KQHANj0I+Orqp+IyIOS++M8TuCX4zkWh9dvi8s92yy/Tn8Ifg=="
+  "resolved" "https://registry.npmjs.org/@codemirror/lang-css/-/lang-css-0.19.3.tgz"
+  "version" "0.19.3"
+  dependencies:
+    "@codemirror/autocomplete" "^0.19.0"
+    "@codemirror/highlight" "^0.19.6"
+    "@codemirror/language" "^0.19.0"
+    "@codemirror/state" "^0.19.0"
+    "@lezer/css" "^0.15.2"
+
+"@codemirror/lang-html@^0.19.0":
+  "integrity" "sha512-QlZN8VhQ+vlOpDMbcfXcG3HiiNeklAfIYnKonPM902SM3nJc4rJ66X9O8mzy0TUDBmew9zaYDubvQcqw7rc5Bg=="
+  "resolved" "https://registry.npmjs.org/@codemirror/lang-html/-/lang-html-0.19.3.tgz"
+  "version" "0.19.3"
+  dependencies:
+    "@codemirror/autocomplete" "^0.19.0"
+    "@codemirror/highlight" "^0.19.6"
+    "@codemirror/lang-css" "^0.19.0"
+    "@codemirror/lang-javascript" "^0.19.0"
+    "@codemirror/language" "^0.19.0"
+    "@codemirror/state" "^0.19.0"
+    "@lezer/common" "^0.15.0"
+    "@lezer/html" "^0.15.0"
+
+"@codemirror/lang-java@^0.19.0":
+  "integrity" "sha512-yA3kcW2GgY0mC2a9dE+uRxGxPWeykfE/GqEPk4TSmhuU4ndmyDgM5QQP7pgnYSZmv2vKoyf4x7NMg8AF7lKXHQ=="
+  "resolved" "https://registry.npmjs.org/@codemirror/lang-java/-/lang-java-0.19.1.tgz"
+  "version" "0.19.1"
+  dependencies:
+    "@codemirror/highlight" "^0.19.0"
+    "@codemirror/language" "^0.19.0"
+    "@lezer/java" "^0.15.0"
+
+"@codemirror/lang-javascript@^0.19.0", "@codemirror/lang-javascript@^0.19.2":
   "integrity" "sha512-qNFjCSTWOTZ/KusoVx3CxjmNS37DrhVoVO9E1IkrIMVC3tkk8Hs2eA6HNMxT4VGp5O+0yBmf1DE2o5QQSMs0jg=="
   "resolved" "https://registry.npmjs.org/@codemirror/lang-javascript/-/lang-javascript-0.19.2.tgz"
   "version" "0.19.2"
@@ -89,6 +132,112 @@
     "@codemirror/view" "^0.19.0"
     "@lezer/javascript" "^0.15.0"
 
+"@codemirror/lang-json@^0.19.0":
+  "integrity" "sha512-66K5TT9HO0ODtpjY+3Ub6t3r0OB1d27P+Kl5oygk4tDavHUBpsyHTJRFw/CdeRM2VwjbpBfctGm/cTrSthFDZg=="
+  "resolved" "https://registry.npmjs.org/@codemirror/lang-json/-/lang-json-0.19.1.tgz"
+  "version" "0.19.1"
+  dependencies:
+    "@codemirror/highlight" "^0.19.0"
+    "@codemirror/language" "^0.19.0"
+    "@lezer/json" "^0.15.0"
+
+"@codemirror/lang-markdown@^0.19.0", "@codemirror/lang-markdown@^0.19.2":
+  "integrity" "sha512-LFzY5TEPmKEBe9ABpG7XujW5pXZwyreunsROOwxewsri0XpupKj3WDfM8U7RwgM0aVc2pXP1u7R1C2MdQPOwPQ=="
+  "resolved" "https://registry.npmjs.org/@codemirror/lang-markdown/-/lang-markdown-0.19.2.tgz"
+  "version" "0.19.2"
+  dependencies:
+    "@codemirror/highlight" "^0.19.0"
+    "@codemirror/lang-html" "^0.19.0"
+    "@codemirror/language" "^0.19.0"
+    "@codemirror/state" "^0.19.0"
+    "@codemirror/view" "^0.19.0"
+    "@lezer/common" "^0.15.0"
+    "@lezer/markdown" "^0.15.0"
+
+"@codemirror/lang-php@^0.19.0":
+  "integrity" "sha512-Q6djLACHu1J6XbnxWlEPCiyqqDrlZLi9QtjY6b9vqdkq/GOsNaXVv44nDY8DD6Bxi5yYRTJ3yh8XzsKuJgztjQ=="
+  "resolved" "https://registry.npmjs.org/@codemirror/lang-php/-/lang-php-0.19.1.tgz"
+  "version" "0.19.1"
+  dependencies:
+    "@codemirror/highlight" "^0.19.0"
+    "@codemirror/lang-html" "^0.19.0"
+    "@codemirror/language" "^0.19.0"
+    "@codemirror/state" "^0.19.0"
+    "@lezer/common" "^0.15.0"
+    "@lezer/php" "^0.15.0"
+
+"@codemirror/lang-python@^0.19.0":
+  "integrity" "sha512-qeDymHL97+pNxFiDrtaMFvd/dActt7sZjebPnrc8T2V1CcBkc2YkcaxEOD5dssM/rQ9dG9LqON/Nbk2fIxcapA=="
+  "resolved" "https://registry.npmjs.org/@codemirror/lang-python/-/lang-python-0.19.2.tgz"
+  "version" "0.19.2"
+  dependencies:
+    "@codemirror/highlight" "^0.19.0"
+    "@codemirror/language" "^0.19.0"
+    "@lezer/python" "^0.15.0"
+
+"@codemirror/lang-rust@^0.19.0":
+  "integrity" "sha512-T/LzRC5bMPvkMg11kr/jnpScqsE68B+F0SYqjyQTzQ+666RhHJICDCSlk7wbIrJi/fagpBwvuAmo2LgQ8dcGsQ=="
+  "resolved" "https://registry.npmjs.org/@codemirror/lang-rust/-/lang-rust-0.19.1.tgz"
+  "version" "0.19.1"
+  dependencies:
+    "@codemirror/highlight" "^0.19.0"
+    "@codemirror/language" "^0.19.0"
+    "@lezer/rust" "^0.15.0"
+
+"@codemirror/lang-sql@^0.19.0":
+  "integrity" "sha512-4FqLC8aNe1iCDyAWbJmSqa8K7rgz2xTwW36V35z4oiyLoyOLsCayKIwoQqp5DNIq2ckGCsyzotgxXKpgtg/pgg=="
+  "resolved" "https://registry.npmjs.org/@codemirror/lang-sql/-/lang-sql-0.19.4.tgz"
+  "version" "0.19.4"
+  dependencies:
+    "@codemirror/autocomplete" "^0.19.0"
+    "@codemirror/highlight" "^0.19.0"
+    "@codemirror/language" "^0.19.0"
+    "@codemirror/state" "^0.19.0"
+    "@lezer/lr" "^0.15.0"
+
+"@codemirror/lang-wast@^0.19.0":
+  "integrity" "sha512-mr/Bp4k8+fJ0P8/Q6L45pnX7/bDBk4VP8ahYrTdvHo+UaOqBBhBFtBqBikvX8ZDQiUTfuZ4tnJE2QtOvmFsuzg=="
+  "resolved" "https://registry.npmjs.org/@codemirror/lang-wast/-/lang-wast-0.19.0.tgz"
+  "version" "0.19.0"
+  dependencies:
+    "@codemirror/highlight" "^0.19.0"
+    "@codemirror/language" "^0.19.0"
+    "@lezer/lr" "^0.15.0"
+
+"@codemirror/lang-xml@^0.19.0":
+  "integrity" "sha512-9VIjxvqcH1sk8bmYbxQon0lXhVZgdHdfjGes+e4Akgvb43aMBDNvIQVALwrCb+XMEHTxLUMQtrsBN0G64yCUXw=="
+  "resolved" "https://registry.npmjs.org/@codemirror/lang-xml/-/lang-xml-0.19.2.tgz"
+  "version" "0.19.2"
+  dependencies:
+    "@codemirror/autocomplete" "^0.19.0"
+    "@codemirror/highlight" "^0.19.6"
+    "@codemirror/language" "^0.19.0"
+    "@codemirror/state" "^0.19.0"
+    "@lezer/common" "^0.15.0"
+    "@lezer/xml" "^0.15.0"
+
+"@codemirror/language-data@^0.19.1":
+  "integrity" "sha512-8mhMC+raPw8cni5cFE4DE6XOK3EdiE/LVN4jPnPjIatZmckovD5TAA45mDEqSBitaQpxssIx7qcKwVP1fNR2nQ=="
+  "resolved" "https://registry.npmjs.org/@codemirror/language-data/-/language-data-0.19.1.tgz"
+  "version" "0.19.1"
+  dependencies:
+    "@codemirror/lang-cpp" "^0.19.0"
+    "@codemirror/lang-css" "^0.19.0"
+    "@codemirror/lang-html" "^0.19.0"
+    "@codemirror/lang-java" "^0.19.0"
+    "@codemirror/lang-javascript" "^0.19.0"
+    "@codemirror/lang-json" "^0.19.0"
+    "@codemirror/lang-markdown" "^0.19.0"
+    "@codemirror/lang-php" "^0.19.0"
+    "@codemirror/lang-python" "^0.19.0"
+    "@codemirror/lang-rust" "^0.19.0"
+    "@codemirror/lang-sql" "^0.19.0"
+    "@codemirror/lang-wast" "^0.19.0"
+    "@codemirror/lang-xml" "^0.19.0"
+    "@codemirror/language" "^0.19.0"
+    "@codemirror/legacy-modes" "^0.19.0"
+    "@codemirror/stream-parser" "^0.19.0"
+
 "@codemirror/language@^0.19.0", "@codemirror/language@^0.19.3":
   "integrity" "sha512-6vjkRYHRJg/z9wdAk75nU2fQwCJBsh2HpkIjKXIHfzISSgLt5qSDxVhPd8Uu8PD5WMmFFP8tX7I9kdIt873o0A=="
   "resolved" "https://registry.npmjs.org/@codemirror/language/-/language-0.19.3.tgz"
@@ -99,6 +248,13 @@
     "@codemirror/view" "^0.19.0"
     "@lezer/common" "^0.15.5"
     "@lezer/lr" "^0.15.0"
+
+"@codemirror/legacy-modes@^0.19.0":
+  "integrity" "sha512-GSPdBNUeyF3nxJ2lztXGp2UoQjn+ggK5z+Kd4tflziecCG1+8mcdudDgFvxDuaTGWyM34S7Ldb4Xv7/XodZtBA=="
+  "resolved" "https://registry.npmjs.org/@codemirror/legacy-modes/-/legacy-modes-0.19.0.tgz"
+  "version" "0.19.0"
+  dependencies:
+    "@codemirror/stream-parser" "^0.19.0"
 
 "@codemirror/lint@^0.19.0":
   "integrity" "sha512-477qvXWwuf24YsBi1DzjrGyzM+qfPe5L4xEHGxQTGOMq6R0+QAFKppOJsxN3y7gzDpLrZSYZdhJzWevOuliZQg=="
@@ -143,10 +299,31 @@
   dependencies:
     "@codemirror/text" "^0.19.0"
 
+"@codemirror/stream-parser@^0.19.0":
+  "integrity" "sha512-hBKRQlyu8GUOrY33xZ6/1kAfNZ8ZUm6cX9a7mPx8zAAqnpz/fpksC/qJRrkg1mPMBwxm+JG4fqAwDGJ3gLVniQ=="
+  "resolved" "https://registry.npmjs.org/@codemirror/stream-parser/-/stream-parser-0.19.2.tgz"
+  "version" "0.19.2"
+  dependencies:
+    "@codemirror/highlight" "^0.19.0"
+    "@codemirror/language" "^0.19.0"
+    "@codemirror/state" "^0.19.0"
+    "@codemirror/text" "^0.19.0"
+    "@lezer/common" "^0.15.0"
+    "@lezer/lr" "^0.15.0"
+
 "@codemirror/text@^0.19.0", "@codemirror/text@^0.19.2":
   "integrity" "sha512-Syu5Xc7tZzeUAM/y4fETkT0zgGr48rDG+w4U38bPwSIUr+L9S/7w2wDE1WGNzjaZPz12F6gb1gxWiSTg9ocLow=="
   "resolved" "https://registry.npmjs.org/@codemirror/text/-/text-0.19.5.tgz"
   "version" "0.19.5"
+
+"@codemirror/theme-one-dark@^0.19.0":
+  "integrity" "sha512-Xlk68ARreanFveE+KvZJY4HxecNr+VKDOR61O8l3kzlQ0qvxNXA0KAp1xu4p32pA9jzJqJi5haIgdfWSZogXZg=="
+  "resolved" "https://registry.npmjs.org/@codemirror/theme-one-dark/-/theme-one-dark-0.19.0.tgz"
+  "version" "0.19.0"
+  dependencies:
+    "@codemirror/highlight" "^0.19.0"
+    "@codemirror/state" "^0.19.0"
+    "@codemirror/view" "^0.19.0"
 
 "@codemirror/tooltip@^0.19.0":
   "integrity" "sha512-DTv6SOzjw8LbHdTd2FszpIkQCUKRl0dqh1pWqawR31Lu/ZCz1nOiOY1sxkiEZVXMTFg44V0Uff0YlY6mTVK2DQ=="
@@ -236,9 +413,44 @@
   "resolved" "https://registry.npmjs.org/@lezer/common/-/common-0.15.7.tgz"
   "version" "0.15.7"
 
+"@lezer/cpp@^0.15.0":
+  "integrity" "sha512-IXX79VTsV/kxDyxzr2XogSobaj4hVXm8cp24oOoB3DzcGu+6X3VVVNOWo/I8Mg1U42OCPGGHrjZU1hmDjrl6BA=="
+  "resolved" "https://registry.npmjs.org/@lezer/cpp/-/cpp-0.15.0.tgz"
+  "version" "0.15.0"
+  dependencies:
+    "@lezer/lr" "^0.15.0"
+
+"@lezer/css@^0.15.2":
+  "integrity" "sha512-tnMOMZY0Zs6JQeVjqfmREYMV0GnmZR1NitndLWioZMD6mA7VQF/PPKPmJX1f+ZgVZQc5Am0df9mX3aiJnNJlKQ=="
+  "resolved" "https://registry.npmjs.org/@lezer/css/-/css-0.15.2.tgz"
+  "version" "0.15.2"
+  dependencies:
+    "@lezer/lr" "^0.15.0"
+
+"@lezer/html@^0.15.0":
+  "integrity" "sha512-ErmgP/Vv0AhYJvs/Ekb9oue4IzBHemKLi7K8tJ0jgS+20Y8FGC9foK6knCXtEHqdPaxVGQH9PVp7gecLnzLd9Q=="
+  "resolved" "https://registry.npmjs.org/@lezer/html/-/html-0.15.0.tgz"
+  "version" "0.15.0"
+  dependencies:
+    "@lezer/lr" "^0.15.0"
+
+"@lezer/java@^0.15.0":
+  "integrity" "sha512-Od2Ugo93XjLxCIEKlrwJfacmSMd7lEnkVQgBjMsZofjwEKZ2Y2ue6URntMFFiftTlNXbE29vYbweWYluEq+Cdw=="
+  "resolved" "https://registry.npmjs.org/@lezer/java/-/java-0.15.0.tgz"
+  "version" "0.15.0"
+  dependencies:
+    "@lezer/lr" "^0.15.0"
+
 "@lezer/javascript@^0.15.0":
   "integrity" "sha512-euFjbbyYmxpBls9FyBAKnGLEjaMFqfHvhfueA7M1PitZdieHu8KSblutmcwjpWKIV4eH4uElMZO2cPVe0aFxXA=="
   "resolved" "https://registry.npmjs.org/@lezer/javascript/-/javascript-0.15.0.tgz"
+  "version" "0.15.0"
+  dependencies:
+    "@lezer/lr" "^0.15.0"
+
+"@lezer/json@^0.15.0":
+  "integrity" "sha512-OsMjjBkTkeQ15iMCu5U1OiBubRC4V9Wm03zdIlUgNZ20aUPx5DWDRqUc5wG41JXVSj7Lxmo+idlFCfBBdxB8sw=="
+  "resolved" "https://registry.npmjs.org/@lezer/json/-/json-0.15.0.tgz"
   "version" "0.15.0"
   dependencies:
     "@lezer/lr" "^0.15.0"
@@ -249,6 +461,41 @@
   "version" "0.15.4"
   dependencies:
     "@lezer/common" "^0.15.0"
+
+"@lezer/markdown@^0.15.0":
+  "integrity" "sha512-CV8UQv5sfXj3eKjWVI23JUg2l7eBMV2B4tfbPoXGImzl6Yh0u2PEyTkcKaRw5fVNWZMGs6a4MOwxZ4vfvR5M0w=="
+  "resolved" "https://registry.npmjs.org/@lezer/markdown/-/markdown-0.15.1.tgz"
+  "version" "0.15.1"
+  dependencies:
+    "@lezer/common" "^0.15.0"
+
+"@lezer/php@^0.15.0":
+  "integrity" "sha512-kU3QSOko0jsv3RLhABPrRD4wEhaWYh2Uh0lTj9Q9BOsBJ5SoADfifO4gHkEDav7AgL/j+ulkKiHiilciTa/RaQ=="
+  "resolved" "https://registry.npmjs.org/@lezer/php/-/php-0.15.0.tgz"
+  "version" "0.15.0"
+  dependencies:
+    "@lezer/lr" "^0.15.0"
+
+"@lezer/python@^0.15.0":
+  "integrity" "sha512-KkbNfjLZCs/Ibx+3mekGu31qz+zCVkXHL+oNftRxB/lsINlz25SURR5z6wb94JpJt0yDFCEtn/2siAUybLOXiA=="
+  "resolved" "https://registry.npmjs.org/@lezer/python/-/python-0.15.0.tgz"
+  "version" "0.15.0"
+  dependencies:
+    "@lezer/lr" "^0.15.0"
+
+"@lezer/rust@^0.15.0":
+  "integrity" "sha512-vq7P0P9478Y4J0cKuwChNJjoZBNERyqBJ4wG94gYORKqXmUei/GtIAxu1Ei24BJRPrVHrg0NmC6daFd+i1re1Q=="
+  "resolved" "https://registry.npmjs.org/@lezer/rust/-/rust-0.15.0.tgz"
+  "version" "0.15.0"
+  dependencies:
+    "@lezer/lr" "^0.15.0"
+
+"@lezer/xml@^0.15.0":
+  "integrity" "sha512-vVh01enxM9hSGOcFtztmX+Pa460HDq5jIeft9bDCe17PUOU0nAbfo883I3cW9lUOcmWNQ3btbkmXMGjRszJE6g=="
+  "resolved" "https://registry.npmjs.org/@lezer/xml/-/xml-0.15.1.tgz"
+  "version" "0.15.1"
+  dependencies:
+    "@lezer/lr" "^0.15.0"
 
 "@malept/cross-spawn-promise@^1.1.0":
   "integrity" "sha512-RTBGWL5FWQcg9orDOCcp4LvItNzUPcyEU9bwaeJX0rJ1IQxzucC48Y0/sQLp/g6t99IQgAlGIaesJS+gTn7tVQ=="
